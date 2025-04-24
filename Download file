@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -30,9 +29,7 @@ opacity: 0.05;
 </style>
 <script>tailwind.config={theme:{extend:{colors:{primary:'#000000',secondary:'#0A0A0A'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
 </head>
-<body class="min-h-screen bg-white">
-<p>download</p >
-<a href="download/Eprova Install.exe"download class="download button"> download</a>    
+<body class="min-h-screen bg-white">   
 <div class="keycap-bg fixed inset-0 z-0"></div>
 <div class="relative z-10 container mx-auto px-4 py-8 min-h-screen flex flex-col items-center">
 <header class="text-center mb-12">
@@ -85,7 +82,23 @@ opacity: 0.05;
 <p>Size: 24.5 MB</p>
 <p class="truncate">SHA256: 8f4e2a1...</p>
 </div>
-<button class="w-full py-2 bg-primary text-white rounded-button font-medium hover:bg-opacity-90">Download</button>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>下载页面</title>
+  <style>
+    .download-button {
+      padding: 12px 24px;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://drive.google.com/file/d/1zQqpB9jZxSuQOL23zDl-KSqDyg9vWkwR/view?usp=drivesdk" class="download-button">
+    download Windows drive (v1.0)
 </div>
 </div>
 </div>
@@ -232,3 +245,4 @@ document.getElementById('detectedOS').textContent = detectOS();
 </script>
 </body>
 </html>
+
